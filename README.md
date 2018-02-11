@@ -1,2 +1,2 @@
 # imisham.com
-Public protfolio
+Public portfolio
