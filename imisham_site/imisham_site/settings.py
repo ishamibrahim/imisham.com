@@ -25,7 +25,7 @@ SECRET_KEY = '=4@6jgi#ch8m@)=f)tu+0k5rlphx*aidl3t(5$i#l-e@-r5^(x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["imisham.com", "www.imisham.com"]
+ALLOWED_HOSTS = ["localhost", "imisham.com", "www.imisham.com"]
 
 
 # Application definition
