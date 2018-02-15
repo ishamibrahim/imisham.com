@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% load static %}
   <head>
 
     <meta charset="utf-8">
@@ -9,20 +9,21 @@
     <meta name="author" content="">
 
     <title>!mi5#@m</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.png' %}" />
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ STATIC_URL }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="{{ STATIC_URL }}/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="{{ STATIC_URL }}/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{ STATIC_URL }}/css/creative.min.css" rel="stylesheet">
+    <link href="{% static 'css/creative.min.css' %}" rel="stylesheet">
 
   </head>
 
@@ -64,7 +65,7 @@
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
-            <img src="{{ STATIC_URL }}/img/portfolio/fullsize/me.jpg" class="img-fluid" style="max-width:40%" alt="YOLO">
+            <img src="{% static 'img/portfolio/fullsize/me.jpg' %}" class="img-fluid" style="max-width:40%" alt="YOLO">
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">A software developer specializing in Python programming language.</p>
@@ -135,8 +136,8 @@
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="{{ STATIC_URL }}/img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="{{ STATIC_URL }}/img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/1.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/1.jpg' %}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -150,8 +151,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="{{ STATIC_URL }}/img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="{{ STATIC_URL }}/img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/2.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/2.jpg' %}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -165,8 +166,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="{{ STATIC_URL }}/img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="{{ STATIC_URL }}/img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/3.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/3.jpg' %}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -180,8 +181,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="{{ STATIC_URL }}/img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="{{ STATIC_URL }}/img/portfolio/thumbnails/4.jpg" alt="">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/4.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/4.jpg' %}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -195,8 +196,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="{{ STATIC_URL }}/img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="{{ STATIC_URL }}/img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/5.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/5.jpg' %}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -210,8 +211,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="{{ STATIC_URL }}/img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="{{ STATIC_URL }}/img/portfolio/thumbnails/6.jpg" alt="">
+            <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/6.jpg' %}">
+              <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/6.jpg' %}" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -260,16 +261,16 @@
     </section>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="{{ STATIC_URL }}/vendor/jquery/jquery.min.js"></script>
-    <script src="{{ STATIC_URL }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="{{ STATIC_URL }}/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="{{ STATIC_URL }}/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="{{ STATIC_URL }}/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/scrollreveal/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="{{ STATIC_URL }}/js/creative.min.js"></script>
+    <script src="{% static 'js/creative.min.js' %}"></script>
 
   </body>
 
